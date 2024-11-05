@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HOJA DE VIDA</title>
+</head>
+
+<script>
+
+    function mostrar() {
+        let span = document.getElementById('span');
+        span.innerHTML = '<form action="#" method="post"><label >Nombre:</label><br /><input type="text" /><br /><label>Email:</label><br /><input type="email"/><br /><br /><input type="button" id="boton_enviar" value="Enviar" /></form>';
+        let boton = document.getElementById('boton_enviar');
+        boton.addEventListener('click', function () {
+            alert('¡FOMRULARIO ENVIADO CORRRECTAMENTE!');
+        }
+        )
+    }
+
+</script>
+
+<body>
+    <header>
+        <h1>JEREMY FONTALVO MUNERA JAMES</h1>
+        <nav>
+            <ul>
+                <li><a id="contacto" onclick="mostrar()">CONTACTAME</a></li>
+                <span id="span"></span>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="contenido">
+
+        <div class="contenedor-izquierda">
+            <div class="foto">
+                <img src="/imagenes/imagenjere.jpeg" alt="Foto de Jeremy Fontalvo" />
+            </div>
+            <div class="detalles-personales">
+
+                <h2>Datos Personales</h2>
+                <p><strong>Nombre:</strong> Jeremy Fontalvo Munera James</p>
+                <p><strong>Correo:</strong> jeremyj-fontalvom@unilibre.edu.co</p>
+                <p><strong>Teléfono:</strong> +3002564857</p>
+                <p><strong>Ubicación:</strong> BARRANQUILLA, COLOMBIA</p>
+            </div>
+        </div>
+
+        <div class="contenedor-derecha">
+            <section class="experiencia">
+                <h2>Experiencia Profesional</h2>
+                <ul>
+                    <li><strong>Desarrollador Web</strong> Universidad Libre</li>
+                    <li><strong>Ingenerio de Sistemas</strong> Universidad Libre</li>
+
+                </ul>
+            </section>
+
+            <section class="educacion">
+                <h2>Educación</h2>
+                <ul>
+                    <li><strong>Ingeniería de Sistemas</strong> - Universidad Libre</li>
+                    <li><strong>Asesor comercial</strong> - SENA: Servicio Nacional De Aprendizaje</li>
+                    <li><strong>Experto de Excel</strong> - SENA: Servicio Nacional De Aprendizaje</li>
+                    <li><strong>Programador Basico</strong> - SENA: Servicio Nacional De Aprendizaje</li>
+                </ul>
+            </section>
+
+            <section class="habilidades">
+                <h2>Habilidades</h2>
+                <ol>
+                    <li>Desarrollo web (HTML, CSS, JavaScript)</li>
+                    <li>PHP, MySQL</li>
+                    <li>Trabajo en equipo</li>
+                </ol>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>Copyright © 2024 - Jeremy Fontalvo Munera James</p>
+    </footer>
+</body>
+
+<footer>
+    <p>Copyright © 2024- 30 - OCT - JEREMY FONTALVO MUNERA</p>
+</footer>
+</body>
+
+</html>
